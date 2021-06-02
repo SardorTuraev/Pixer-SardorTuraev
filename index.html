@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
-   <!--  <link rel="stylesheet" href="./css/style.css"> -->
-   <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="./css/style.css"> 
+ <!--   <link rel="stylesheet" href="./css/style.min.css"> -->
 </head>
 <body>
     
@@ -25,14 +25,14 @@
                 <ul class="nav-list">
                     
                     
-                    <li class="nav-items">
+                    <li class="nav-items nav-link-active">
                         <a class="nav-link" href="#menu">Bosh sahifa</a>
                     </li>
                     
                     
                     
                     <li class="nav-items">
-                        <a class="nav-link" href="#xizmatlar">Xizmatlar</a>
+                        <a class="nav-link" href="xizmatlar.html">Xizmatlar</a>
                         
                         <ul class="dropdown">
                             <li class="dropdown-item">
@@ -81,15 +81,10 @@
                     <li class="nav-items">
                         <a class="nav-link" href="">Kontaktlar</a>
                     </li>
-                    
-                    
-                    <a class=" tel-link" href="tel:+998 90 921 37 11">+998 90 921 37 11</a>
-                    
-                    
-                    
-                    
-                    
-                </ul>
+                                                                                                                                    
+               </ul>
+
+               <a class="tel-link" href="tel:+998 90 921 37 11">+998 90 921 37 11</a>
                 
             </div>
             
@@ -112,7 +107,7 @@
                         
                         <p class="business-p">Nullam laoreet nec turpis et ultrices. Duis sit amet quam arcu. Nam facilisis lacinia ex, eget sollicitudin massa pellentesque in. Vivamus mattis eros at sem pulvinar</p>
                         
-                        <a class="business-link" href="index.html">Xizmatlar bilan tanishish</a>
+                        <a class="business-link" href="#xizmatlar-bilan-tanishish">Xizmatlar bilan tanishish</a>
                         
                     </div>
                     
@@ -129,7 +124,7 @@
         
         
         
-        <section class="xizmatlar-section" id="xizmatlar">
+        <section class="xizmatlar-section" id="xizmatlar-bilan-tanishish">
             
             <div class="container">
                 
@@ -148,26 +143,27 @@
                         <ul class="cards">
                             
                             <li class="card-items">
+                              <a class="link-card" href="telegram.html">
                                 <h3  class="card-header vebsayt">Vebsayt tuzish</h3>
-                                <span class="card-info">lorem ipsum</span>
+                                <span class="card-info">lorem ipsum</span></a>
                             
                             </li>
                             
                             
                             
                             <li class="card-items">
-                                
+                              <a class="link-card" href="telegram.html">
                                 <h3 class="card-header telegram-bot">Telegram bot</h3>
-                                <span class="card-info">lorem ipsum</span>
+                                <span class="card-info">lorem ipsum</span></a>
                             </li>
                             
                             
                             
                             
                             <li class="card-items">
-                                
+                              <a class="link-card" href="smm.html">
                                 <h3 class="card-header smm">SMM</h3>
-                                <span class="card-info">lorem ipsum</span>
+                                <span class="card-info">lorem ipsum</span></a>
                             </li>
                             
                             
@@ -266,22 +262,21 @@
 
                 <form class="form-box" action="https://echo.htmlacademy.ru">
 
-                    <label>
-                        <input class="input-item first" type="text" name="name" id="name" placeholder="Ismingiz" >
+                    <label for="name">
+                        <input class="input-item first" type="text" name="name" id="name" placeholder="Ismingiz" required >
                     </label>
 
                     
-                    <label>
-                        <input class="input-item " type="tel" name="tel" id="tel"  placeholder="Telefon raqamingiz" >
+                    <label  for="tel">
+                    <input class="input-item " type="tel" name="tel" id="tel"  placeholder="Telefon raqamingiz" required >
                     </label>
 
                     <label for="xizmat"></label>
 
-                    <select class="option-item" name="xizmat" id="xizmat">
-                      <option value="volvo">Xizmat turi</option>
-                      <option value="1">bir</option>
-                      <option value="2">ikki</option>
-                      <option value="3">uch</option>
+                    <select class="option-item" name="xizmat" id="xizmat" required>
+                      <option value="" disabled selected>Xizmat turi</option>
+                      <option value="bir">bir</option>
+                      <option value="ikki">ikki</option>
                     </select>
                     <button  class="button order-button option-button">Buyurtma berish</button>
                 </form>

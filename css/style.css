@@ -32,6 +32,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   box-sizing: border-box;
+  margin-top: 56px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+
 }
 
 img {
@@ -65,6 +71,7 @@ img {
   position: fixed;
   background-color: var(--white-color);
   width: 100%;
+  top: 0;
 }
 
 
@@ -73,10 +80,8 @@ img {
   display: flex;
   align-items: center;
   padding:0;
-  justify-content: space-between;
   box-sizing: border-box;
   position: relative;
-  
 }
 
 .logo-item{
@@ -98,24 +103,25 @@ img {
   align-items: center;
   padding: 0;
   margin: 0;
-  margin-right: 1px;
+  margin-left: 300px;
 }
 .nav-items {
   list-style: none;
   padding: 16px;
   text-align: center;
-  border-bottom: 2px solid transparent;
+  border-bottom: 3px solid transparent;
   cursor: pointer;
   transition:  0.3s ease;
   position: relative;
   flex-grow: 1;
 }
 .nav-items:hover{
-  border-bottom: 2px solid #191919;
+  border-bottom: 3px solid #191919;
 }
 
 .nav-items:active{
   background: rgba(25, 25, 25, 0.7);
+  border: none;
 }
 
 .nav-items:active .nav-link {
@@ -144,14 +150,14 @@ img {
   padding: 0;
   margin: 0;
   list-style: none;
-  background-color: transparent;
+  background-color: var(--white-color);
   white-space: nowrap;
   box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   flex-direction: column;
   width: 124px;
   padding-top: 8px;
-  transition:0.3s ease;
+  transition: 0.3s ease;
 }
 .nav-items:hover .dropdown{
   display: block;
@@ -201,13 +207,14 @@ img {
   text-decoration: none;
   border: 3px solid  transparent;
   transition:  0.3s ease;
+  margin-left: auto;
+  
 }
 
 .tel-link:hover{
   color: var(--blue-color);
   background-color: transparent;
   border: 3px solid  var(--blue-color);
-  margin-left: 1px;
 }
 .tel-link:active{
   background: rgba(0, 186, 252, 0.6);
@@ -219,9 +226,6 @@ img {
 
 .business-video-section{
   padding-bottom: 80px;
-}
-
-.business-video-section{
   display: flex;
   margin-top: 56px;
 }
@@ -237,7 +241,8 @@ img {
   font-weight: bold;
   font-size: 30px;
   line-height: 130%;
-  color: var(--text-color)  ;
+  color: var(--text-color);
+  margin:0;
 }
 
 
@@ -248,14 +253,15 @@ img {
   font-size: 16px;
   line-height: 24px;
   color: var(--text-color);
+  margin: 0;;
   margin-top: 16px;
-  
 }
 
 .business-link{
   font-family: "Open Sans";
   font-style: normal;
   font-weight: bold;
+  display: inline-block;
   font-size: 16px;
   line-height: 24px;
   background: #00BAFC;
@@ -263,6 +269,8 @@ img {
   text-decoration: none;
   color: var(--white-color);
   padding: 8px 16px;
+  margin: 0;
+  transition: 0.3s ease;
   margin-top: 16px;
 }
 
@@ -284,6 +292,7 @@ img {
   margin-left: 172px;
   margin-top: 80px;
   border-radius: 6px;
+  border: none;
 }
 
 
@@ -357,9 +366,6 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
-
-
-
 
 .card-header{
   font-family: "Open Sans";
@@ -629,6 +635,7 @@ img {
 .form-main{
   background-color: var(--blue-color);
   padding-bottom: 64px;
+  
 }
 
 .form-main h2{
@@ -669,6 +676,7 @@ img {
   align-items: center;
   padding-top: 24px;
   padding-left: 24px;
+  margin-top: 24px;
 }
 
 .input-item{
@@ -723,8 +731,13 @@ img {
 
 
 
-
-
+.footer-head{
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+line-height: 130%;
+color: #FFFFFF;
+}
 
 
 
@@ -839,6 +852,163 @@ img {
   color: var(--blue-color);
   opacity: .6;
 }
+
+
+
+
+
+/* XIZMATLAR SAHIFASI */
+
+.nav-link-active {
+  border-bottom: 3px solid #191919;
+}
+
+
+.service-section{
+  background-color: #fff;
+padding-top: 72px;
+padding-bottom: 72px;
+}
+
+
+.service-section h2{
+font-family: "Open Sans";
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 130%;
+color: #000000;
+text-align: center;
+margin: 0;
+}
+
+
+.service-section-p{
+  width: 800px;
+   margin: 0 auto;
+}
+.service-section-p p{
+font-family: "Open Sans","Arial",sans-serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+color: #000000;
+text-align: center;
+margin: 0;
+padding:0;
+margin-top: 16px;
+}
+
+
+
+.service-middle-section{
+    background-color: #f4f4f4;
+    padding: 80px 0px;
+    
+}
+
+
+.service-middle-list{
+  margin:0;
+  width: 804px;
+  margin-right: auto;
+ margin-left: auto;
+ list-style: none;
+ 
+}
+
+.service-middle-items{
+  display: flex;
+  width: 804px;
+  padding: 32px;
+  background-color: var(--white-color);
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.12);
+  border-radius: 5px;
+ 
+}
+
+.service-middle-items~.service-middle-items{
+  margin-top: 64px;
+}
+.service-middle-items::before{
+  content: "";
+  background-image: url("../img/websayt-tuzish.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  width: 200px;
+  height: 128px;
+  margin-right: 40px;
+  flex-shrink: 0;
+}
+.service-middle-list .service-middle-items:nth-child(2):before{
+  background-image: url("../img/telegram-bot.svg");
+}
+.service-middle-list .service-middle-items:nth-child(3)::before{
+  background-image: url("../img/smm.svg");
+}
+.service-middle-list .service-middle-items:nth-child(4)::before{
+  background-image: url("../img/grafik-fezayn.svg");
+}
+.service-middle-list .service-middle-items:nth-child(5)::before{
+  background-image: url("../img/crm-tizimlar.svg");
+}
+
+
+.service-middle-box{
+  width: 500px;
+}
+
+
+.service-middle-header{
+  margin: 0;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 130%;
+  margin-bottom: 16px;
+}
+.service-middle-p{
+  margin: 0;
+  margin-bottom: 16px;
+  font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+font-family: "Open Sans";
+}
+
+.service-middle-box-list{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-bottom: 16px;
+  
+}
+.service-middle-box-items {
+  align-items: center;
+  display: flex;
+}
+.service-middle-box-items::before{
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: var(--blue-color);
+  background-size: contain;
+  display: block;
+  margin-right: 8px;
+}
+
+.service-middle-box-items ~ 
+.service-middle-box-items {
+  margin-top: 8px;
+}
+.link-and-button-type{
+  text-align: left;
+}
+
+
 
 
 
