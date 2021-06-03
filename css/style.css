@@ -79,15 +79,13 @@ img {
 .main-nav{
   display: flex;
   align-items: center;
-  padding:0;
-  box-sizing: border-box;
-  position: relative;
 }
 
 .logo-item{
   display:flex;
   padding: 0;
   margin: 0;
+  margin-right: auto;
 }
 
 .logo-item:hover{
@@ -103,7 +101,7 @@ img {
   align-items: center;
   padding: 0;
   margin: 0;
-  margin-left: 300px;
+margin-right: 1px;
 }
 .nav-items {
   list-style: none;
@@ -121,11 +119,15 @@ img {
 
 .nav-items:active{
   background: rgba(25, 25, 25, 0.7);
-  border: none;
+  border-bottom: 3px solid transparent;
 }
 
 .nav-items:active .nav-link {
   color: var(--white-color);
+}
+
+.site-nav{
+  display: flex;
 }
 
 
@@ -158,6 +160,7 @@ img {
   width: 124px;
   padding-top: 8px;
   transition: 0.3s ease;
+  margin-top: 3px;
 }
 .nav-items:hover .dropdown{
   display: block;
@@ -207,8 +210,6 @@ img {
   text-decoration: none;
   border: 3px solid  transparent;
   transition:  0.3s ease;
-  margin-left: auto;
-  
 }
 
 .tel-link:hover{
@@ -219,6 +220,7 @@ img {
 .tel-link:active{
   background: rgba(0, 186, 252, 0.6);
   color: var(--white-color);
+  border: 3px solid transparent;
 }
 
 
@@ -691,7 +693,12 @@ img {
   margin-top: 16px;
   background-color: #F3F3F3;
   border:none;
+
 }
+.input-item::placeholder{
+  color: var(--text-color);
+}
+
 .first{
   margin-top: 0;
 }
